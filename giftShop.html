@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="shortcut icon" type="image/png" href="./img/santaLogo.png"/>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Gift shop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./CSS/giftShopStyles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&display=swap" rel="stylesheet">
+  
+
+    <script src="JS/main.js"></script>
+</head>
+
+<body>
+
+    
+
+    <header class="header">
+        <a href="homePage.html" id="backbtn"><img src="./img/back.png" alt="BACK" id="back"></a>
+
+        <div class="header-center">
+            <h1>*Gift Shop*</h1>
+        </div>
+
+        <img src="./img/bells.png" alt="Bell" id="bell">
+
+    </header>
+
+    <div class="main">
+        <div class="divleft">
+
+        </div>
+        <div class="divcenter">
+
+            <div class="maintop">
+                <div class="maintopLeft bg">
+                    <a id="link"  href="https://www.dexy.co.rs/igracke/decaci" new target="_blank">
+                        <p class="paragrafLink" id="zaDecake">ZA DEČAKE</p>
+                    </a>
+                </div>
+                <div class="maintopRight bg">
+                    <a id="link" href="https://www.dexy.co.rs/igracke/devojcice" new target="_blank">
+                        <p class="paragrafLink" id="zaDevojcice">ZA DEVOJČICE</p>
+                    </a>
+                </div>
+            </div>
+            <div class="mainbottom">
+                <div class="mainbottomLeft bg">
+                    <a id="link" href="https://www.delfi.rs/knjige/zanr/74_knjige_za_decu_delfi_knjizare.html" new
+                        target="_blank">
+                        <p class="paragrafLink" id="knjige">KNJIGE</p>
+                    </a>
+                </div>
+                <div class="mainbottomCenter bg">
+                    <a id="link" href="https://www.petmarket.rs/" new target="_blank">
+                        <p class="paragrafLink" id="ljubimci">ZA LJUBIMCE</p>
+                    </a>
+                </div>
+                <div class="mainbottomRight bg">
+                    <a id="link" href="https://www.svezakucu.rs/www/k-5085/novogodisnji-i-bozicni-ukrasi" new target="_blank">
+                        <p class="paragrafLink" id="ukrasi">UKRASI</p>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <div class="divright">
+
+            <p id="countdown">Klikni na Sneška da saznaš koliko je ostalo do Nove Godine!</p>
+           <a > <img src="./img/snesko.png" alt="Snowman" id="snowman" onclick="fCountdown()"></a>
+           <a > <img src="./img/snowmanSign.png" alt="Snowman" id="hiddenSnowman" onclick="fCountdown()"></a>
+            
+        </div>
+
+
+
+    </div>
+
+    <footer class="footer">
+        
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="JS/jquery.js"></script>
+    <script src="jquery-ui-1.12.1/jquery-ui.js"></script>
+    <script>
+        $( function() {
+          $( "#bell" ).draggable();
+        } );
+        </script>
+
+
+
+</body>
+
+</html>

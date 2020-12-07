@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="shortcut icon" type="image/png" href="./img/santaLogo.png" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Pismo Deda Mraza</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./CSS/pismoDedaMrazuStyles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&display=swap" rel="stylesheet">
+    <script src="JS/main.js"></script>
+</head>
+
+<body>
+
+    <img src="img/imgDno.png" alt="" id="imgAb">
+
+    <header class="header">
+        <a href="homePage.html" id="backbtn"><img src="./img/back.png" alt="BACK" id="back"></a>
+
+        <div class="header-center">
+            <h1>*Pošalji pismo Deda Mrazu*</h1>
+        </div>
+
+        <img src="./img/bells.png" alt="Bell" id="bell">
+
+    </header>
+
+    <main class="main">
+
+        <div class="left"></div>
+        <div class="center">
+            <form action="" class="forma">
+                <p class="dearSanta">Dragi Deda Mraze, </p>
+                <label for="ime" class="ime">Zovem se <input type="text" id="ime" minlength="2" placeholder="Tvoje ime" required>.</label> 
+                <label for="godine" class="godine">Imam <input type="number" id="godine" min="1" placeholder="broj" required> godina(e).</label> <br>
+                <label for="drzava" class="drzava"> Živim u </label>
+                <select name="drzava" id="drzava">
+                    <option value="srb">Srbiji</option>
+                    <option value="bih">Bosni i Hercegovini</option>
+                    <option value="cg">Crnoj Gori</option>
+                    <option value="cro">Hrvatskoj</option>
+                    <option value="smk">Severnoj Makedoniji</option>
+                </select>
+                <label for="grad" class="grad">U gradu <input type="text" id="grad" minlength="2" placeholder="Grad u kome živiš" required>,</label>
+                <label for="adresa" class="adresa">na adresi <input type="text" id="adresa" minlength="2" placeholder="Ulica i broj" required></label>
+                <br>
+                <div id="toLeft">
+                    <label class="ponasanje">Ove godine bio/la sam </label> <br>
+                    <input type="radio" id="andjeo" name="ponasanje" value="andjeo">
+                    <label for="andjeo">pravi andjeo</label><br>
+                    <input type="radio" id="dobar" name="ponasanje" value="dobar">
+                    <label for="dobar">dobar/a</label><br>
+                    <input type="radio" id="nevaljao" name="ponasanje" value="nevaljao">
+                    <label for="nevaljao">nevaljao/la (mogu da objasnim)</label> <br> 
+                </div>
+                <br><br>
+                <div id="toRight">
+                    <label for="najlepsa">Najlepša stvar koju sam uradio/la ove godine je</label><br>
+                    <textarea name="najlepsa" id="najlepsa" cols="40" rows="5" placeholder="Ne moraš popuniti ovo polje"></textarea>
+                </div>
+                <br><br><br>
+                <div id="toLeft">
+                    <label for="zelja" class="zelja">Za Novu Godinu želeo/la bih </label> <br>
+                <textarea id="zelja" name="" cols="100" rows="10" required></textarea><br>
+
+                <input type="submit" class="submit" value="Posalji Deda Mrazu" disabled >
+                <input type="reset" class="reset" value="Resetuj pismo">
+                
+                </div>
+                
+                
+            </form>
+
+        </div>
+        <div class="right"></div>
+
+
+    </main>
+
+    <footer class="footer">
+
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="JS/jquery.js"></script>
+    <script src="jquery-ui-1.12.1/jquery-ui.js"></script>
+    <script>
+        $( function() {
+          $( "#bell" ).draggable();
+        } );
+        </script>
+    
+
+</body>
+
+</html>

@@ -1,0 +1,160 @@
+body{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: inherit;
+}
+
+html{
+  font-size: 10px;
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url(../img/bgsivo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.oNama {
+  margin-top: 2rem;
+}
+
+
+
+
+
+.prvi, .drugi, .treci {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  width: 100%;
+}
+
+.social img {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.prvi, .treci {
+  border: solid 3px rgba(128, 128, 128, 0.521);
+}
+
+.social {
+  margin-bottom: 2rem;
+}
+
+.title, h3{
+  font-size: 7rem;
+  font-family: 'Mountains of Christmas', cursive;
+  color: red;
+  filter: drop-shadow(0 3px 3px black);
+  
+}
+
+
+.opis {
+  font-size: 2rem;
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem;
+}
+
+    
+#imgAb{
+  position: fixed;
+  bottom: 0;
+  left: 2rem;
+  padding: 0;
+  height: 20rem;
+  width: 20rem;
+  z-index: +1;
+ 
+}
+
+.lokacija {
+  margin-bottom: 3rem;
+}
+
+
+
+
+
+#back{
+  position: absolute;
+  top: 4rem;
+  left: 4rem;
+  padding: 0;
+  height: 10rem;
+  width: 10rem;
+  z-index: +1;
+ 
+}
+
+
+
+
+#backbtn img:hover{
+  transform: scale(1.33);
+}
+
+#santaDiv{
+  position: absolute;
+  right: 4rem;
+  top: 2.3rem;
+  padding: 0;
+  height: 22rem;
+  width: 22rem;
+}
+
+.opis {
+  background: rgba(128, 128, 128, 0.747);
+  border-radius: 20px;
+}
+
+
+@media all and (max-width:769px){
+ 
+  body{
+  overflow-x: hidden; /*Kris*/
+ }
+  
+  .drugi{
+  margin-top: 0;
+  }
+  
+  .saradnici{
+  margin-top: 0;
+  }
+  
+  .opis{
+  width: 60%;
+  }
+  
+  #santaDiv{
+  height: 150px;
+  width: 150px;
+  }
+  
+  .partneri{
+  width: 100%;
+  }
+  
+  #imgAb{
+  height: 100px;
+  width: 100px;
+  }
+
+  #back{
+    height: 70px;
+    width: 70px;
+    }
+
+ }
+
+

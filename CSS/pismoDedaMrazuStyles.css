@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+      font-family: 'Mountains of Christmas', cursive;
+      background-image: url(../img/background1.png);
+      background-size: cover;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-position: center;
+      overflow-x: hidden;
+}
+
+.header{
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header-center{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    text-align: center;
+}
+
+.header-center h1 {
+    font-family: 'Mountains of Christmas', cursive;
+    font-size: 5rem;
+    color:  red;
+    filter: drop-shadow(0 5px 5px black);
+     margin-left: auto;
+    margin-right: auto;
+}
+
+#back{
+    float: left;
+    height: 6rem;
+    width: 6rem;
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+}
+
+#backbtn img:hover{
+    transform: scale(1.33);
+}
+
+#bell {
+    float:right;
+    height: 13rem;
+    margin-right: 1.5rem;
+    margin-top: 1.5rem;
+    z-index: +1;
+}
+
+.main   {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    height: 45rem;
+}
+
+.center{
+    background-color: rgba(128, 128, 128, 0.603);
+    border-radius: 20px;
+}
+
+.forma {
+    margin-left: 4rem;
+    margin-top: 2rem;
+    font-size: 3.1vh;  /* 3 vh */
+    margin-right: 4rem;
+}
+
+.dearSanta {
+    font-size: 4rem;
+    margin: 0 auto 2rem 0;
+    letter-spacing: 0.1rem;
+    word-spacing: 0.4rem;
+    color: red;
+    filter: drop-shadow(0 3px 3px black);
+}
+
+label {
+    line-height: 3rem;
+  }
+  
+   #godine {
+    height: 1.25rem;
+    width: 3.5rem;
+    flex: 0 0 20px;
+  }
+
+#toLeft{
+    float: left;
+}
+
+#toRight{
+    float: right;
+    margin-top: -1rem;
+    margin-right: 3rem;
+}
+
+textarea{
+    resize: none;
+    width: 85%;
+}
+
+    
+#imgAb{
+    position: fixed;
+    bottom: -1.5rem;
+    right: 2rem;
+    padding: 0;
+    height: 11rem;
+    width: 11rem;
+}
+
+
+.submit , .reset{
+    height: 3rem;
+    width: 9rem;
+    margin-top: 0.2rem;
+    font-weight: bold;
+    color: black;
+}
+
+input {
+    margin-right: 1rem;
+    margin-left: 0.4rem;
+}
+
+.footer {
+    height: 9rem;
+}
+
+
+/* --------------------------------- */
+
+#ime , #godine, #grad, #adresa , #zelja
+{
+    border: 2px solid red;
+    
+}
+
+
+/**********************MEDIA*****************************/
+ 
+@media all and (max-width:401px){
+ 
+    .dearSanta{
+    font-size: 35px;
+    }
+    
+   #ime, #grad,#adresa{
+    width: 130px;
+   }
+    
+   
+    
+   }
+    
+   @media all and (max-width:915px){
+    
+    .header-center{
+    width: 60%;
+    }
+    
+    .header-center h1 {
+    font-size: 30px; 
+    margin-left: auto;
+    margin-right: auto;
+    }
+    
+    #bell{
+    height: 90px;
+    width: 90px;
+    transform: rotate(0);
+    }
+    #backbtn{
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    }
+    
+    #backbtn img:hover{
+    transform: scale(1.1);
+    }
+    
+    #back{
+    float: left;
+    height:90px;
+    width: 90px;
+    margin-left: 7px;
+    padding-top: 0;
+    margin-top: 0;
+    } 
+    
+    #toLeft label {
+    font-size: 20px;
+    }
+    
+    #imgAb{
+    right: 1rem;
+    height: 10rem;
+    width: 10rem;
+    }
+    
+    .forma {
+    margin-left: 1.3rem;
+    margin-top: 1.7rem;
+    font-size: 1.2rem;
+    margin-right: 1.3rem; 
+    margin-bottom: 1rem;
+    }
+   }
